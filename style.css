@@ -1,0 +1,36 @@
+*{
+    font-family: Arial;
+}
+
+body{
+        padding-left: 60px;
+    padding-right: 60px;
+}
+.stats-section{
+    display: flex;
+    justify-content: center;
+}
+
+.wrap{
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.span{
+    text-decoration: under;
+}
+
+.fahrzeug-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer{
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
