@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startseite | Feuerwehr Flein</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="scripts.js" defer></script>
 </head>
 <body>
     <div class="content">
@@ -159,5 +157,27 @@
                 E-Mail <a href="mailto:kommandant@flein.de">kommandant@flein.de</a>
             </div>
     </div>
+
+<style>
+    const counters = document.querySelectorAll(".counter");
+
+counters.forEach(counter => {
+    const updateCounter = () => {
+        const target = +counter.getAttribute("data-target");
+        const current = +counter.innerText;
+
+        const increment = target / 100;
+
+        if (current < target) {
+            counter.innerText = Math.ceil(current + increment);
+            setTimeout(updateCounter, 20);
+        } else {
+            counter.innerText = target;
+        }
+    };
+
+    updateCounter();
+});
+</style>
 </body>
 </html>
