@@ -4,6 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startseite | Feuerwehr Flein</title>
+    <style>
+            *{
+    font-family: Arial;
+}
+
+body{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.stats-section{
+    display: flex;
+    justify-content: center;
+}
+
+.wrap{
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.span{
+    text-decoration: under;
+}
+
+.fahrzeug-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer{
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+        
+    </style>
 </head>
 <body>
     <div class="content">
@@ -158,7 +198,7 @@
             </div>
     </div>
 
-<style>
+<script>
     const counters = document.querySelectorAll(".counter");
 
 counters.forEach(counter => {
@@ -178,6 +218,6 @@ counters.forEach(counter => {
 
     updateCounter();
 });
-</style>
+</script>
 </body>
 </html>
