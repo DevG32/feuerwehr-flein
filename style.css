@@ -12,8 +12,8 @@ body{
 }
 
 .wrap{
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
     font-size: 45px;
     display: flex;
     justify-content: center;
